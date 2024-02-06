@@ -18,10 +18,10 @@ function descriptografar(){
     document.getElementById ('output').innerHTML=`<textarea readonly id="input-texto">`+resultDescripto+`</textarea>`+`<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>`
 }
 
-function copiar(){
-    var textoCop = document.getElementById('input-texto');
-
-    textoCop.select();
-    document.execCommand ('copy');
-    alert("Texto Copiado");
+function copiar() {
+    var textoCopiado = document.getElementById('input-texto');
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999)
+    document.execCommand('copy');
+    alert("O texto copiado é: " + textoCopiado.value);
 }

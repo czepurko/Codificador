@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root{
-    --corprincipal:#00008B;
-    --corsecundaria:#ffffff;
-    --cortitulo: #262DD6;
+    --corprincipal:#0A3871;
+    --corsecundaria:#EFF1FA;
+    --cortitulo: #0A3871;
 }
 
 body{
-    background-color: rgb(176, 233, 249);
+    background-color:#E9ECF8;
+    
 }
 
 *{
@@ -24,6 +25,9 @@ body{
 
 .cabecalho h1{
     color:var(--cortitulo);
+    display: flex;
+    padding: 6%;
+    
 }
 .cabecalho img{
     max-width: 300px;
@@ -64,6 +68,7 @@ body{
     width: 350px;
     height: 400px;
     margin-right: 10%;
+    background-color:var(--corsecundaria);
 }
 
 #output h2{
@@ -88,14 +93,15 @@ body{
 }
 
 .container-bnt button{
-    border: 2px solid var(--cortitulo);
+    border: 2px solid var(--corprincipal);
     border-radius: 10px;
     text-decoration: none;
-    color: var(--corprincipal);
+    color: var(--cortitulo);
     width: 150px;
     height: 50px;
     margin-left: 4%;
     cursor: pointer;
+    background-color:var(--corsecundaria)
 }
 
 .btn-copiar{
@@ -108,6 +114,7 @@ body{
     margin-bottom: 10%;
     margin-left: 30%;
     cursor: pointer;
+    background-color: var(--corsecundaria);
 }
 
 .container-bnt button:hover{
@@ -122,7 +129,8 @@ body{
     padding: 2%;
     margin-top: 15px;
     background: var(--corprincipal);
-    color: var(--cortitulo);
+    color: var(--corsecundaria);
+   
 }
 
 .rodape h3{
@@ -132,9 +140,9 @@ body{
 .icons ion-icon{
     width: 25px;
     height: 25px;
-    color: var(--cortitulo);
+    color: var(--corsecundaria);
 }
 
 .icons ion-icon:hover {
-    color: var(--corsecundaria);
+    color: black;
      }
